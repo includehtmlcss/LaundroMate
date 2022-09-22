@@ -172,6 +172,11 @@ const MainLayout = ({
 
 	React.useEffect(() => {
 		if (selectedTab == constants.screens.home) {
+			flatListRef.current.scrollToIndex({
+				index: 0,
+				animated: false
+			})
+
 			homeTabFlex.value = withTiming(4, { duration: 600 })
 			homeTabColor.value = withTiming(COLORS.primary, { duration: 600 })
 		} else {
@@ -180,6 +185,11 @@ const MainLayout = ({
 		}
 
 		if (selectedTab == constants.screens.search) {
+			flatListRef.current.scrollToIndex({
+				index: 1,
+				animated: false
+			})
+
 			searchTabFlex.value = withTiming(4, { duration: 600 })
 			searchTabColor.value = withTiming(COLORS.primary, { duration: 600 })
 		} else {
@@ -188,6 +198,11 @@ const MainLayout = ({
 		}
 
 		if (selectedTab == constants.screens.cart) {
+			flatListRef.current.scrollToIndex({
+				index: 2,
+				animated: false
+			})
+
 			cartTabFlex.value = withTiming(4, { duration: 600 })
 			cartTabColor.value = withTiming(COLORS.primary, { duration: 600 })
 		} else {
@@ -196,6 +211,11 @@ const MainLayout = ({
 		}
 
 		if (selectedTab == constants.screens.favourite) {
+			flatListRef.current.scrollToIndex({
+				index: 3,
+				animated: false
+			})
+
 			favouriteTabFlex.value = withTiming(4, { duration: 600 })
 			favouriteTabColor.value = withTiming(COLORS.primary, { duration: 600 })
 		} else {
@@ -204,6 +224,11 @@ const MainLayout = ({
 		}
 
 		if (selectedTab == constants.screens.notification) {
+			flatListRef.current.scrollToIndex({
+				index: 4,
+				animated: false
+			})
+
 			notificationTabFlex.value = withTiming(4, { duration: 600 })
 			notificationTabColor.value = withTiming(COLORS.primary, { duration: 600 })
 		} else {
