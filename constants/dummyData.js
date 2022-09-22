@@ -3,23 +3,23 @@ import { icons, images } from "./";
 const myProfile = {
   name: "My LaundroMate",
   profile_image: images.profile,
-  address: "No. 88, Jln Padungan, Kuching",
+  address: "23, Park Road, Lantern Square",
 };
 
 const categories = [
   {
     id: 1,
-    name: "Fast Food",
+    name: "Daily Wear",
     icon: icons.burger,
   },
   {
     id: 2,
-    name: "Fruit Item",
+    name: "Party Wear",
     icon: icons.cherry,
   },
   {
     id: 3,
-    name: "Rice Item",
+    name: "Ornamental",
     icon: icons.rice,
   },
 ];

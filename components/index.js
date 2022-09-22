@@ -1,4 +1,8 @@
 import Header from "./Header";
-import HorizontalFoodCard from "./HorizontalFoodCard";
-import VerticalFoodCard from "./VerticalFoodCard";
-export { Header, HorizontalFoodCard, VerticalFoodCard };
+import HorizontalClothesCard from "./HorizontalClothesCard";
+import VerticalClothesCard from "./VerticalClothesCard";
+import IconButton from "./IconButton";
+import TextButton from "./TextButton";
+import TwoPointSlider from "./TwoPointSlider";
+import TextIconButton from "./TextIconButton";
+export { Header, HorizontalClothesCard, IconButton, TextButton, TextIconButton, TwoPointSlider, VerticalClothesCard };

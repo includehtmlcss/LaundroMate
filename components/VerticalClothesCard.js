@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import { COLORS, FONTS, SIZES, icons } from "../constants";
 
-const VerticalFoodCard = ({ containerStyle, item, onPress }) => {
+const VerticalClothesCard = ({ containerStyle, item, onPress }) => {
     return (
         <TouchableOpacity
             style={{
@@ -85,4 +85,4 @@ const VerticalFoodCard = ({ containerStyle, item, onPress }) => {
     )
 }
 
-export default VerticalFoodCard;
+export default VerticalClothesCard;

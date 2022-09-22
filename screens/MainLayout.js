@@ -250,7 +250,7 @@ const MainLayout = ({
 				containerStyle={{
 					height: 50,
 					paddingHorizontal: SIZES.padding,
-					marginTop: 40,
+					marginTop: 25,
 					alignItems: "center",
 				}}
 				title={selectedTab.toUpperCase()}
@@ -331,7 +331,7 @@ const MainLayout = ({
 			<View
 				style={{
 					height: 100,
-					justifyContent: 'flex-end'
+					justifyContent: 'flex-end',
 				}}
 			>
 				{/* Shadow */}
@@ -340,7 +340,7 @@ const MainLayout = ({
 					end={{ x: 0, y: 4 }}
 					colors={[
 						COLORS.transparent,
-						COLORS.lightGray1
+						COLORS.darkGray2
 					]}
 					style={{
 						position: 'absolute',
@@ -362,6 +362,8 @@ const MainLayout = ({
 						paddingBottom: 10,
 						borderTopLeftRadius: 20,
 						borderTopRightRadius: 20,
+						borderBottomLeftRadius: 26,
+						borderBottomRightRadius: 26,
 						backgroundColor: COLORS.white
 					}}
 				>

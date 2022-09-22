@@ -8,7 +8,8 @@ import {
 	FlatList
 } from 'react-native';
 
-import { HorizontalFoodCard, VerticalFoodCard } from "../../components";
+import FilterModal from './FilterModal';
+import { HorizontalClothesCard, VerticalClothesCard } from "../../components";
 import { color } from 'react-native-reanimated';
 import {
 	FONTS,
@@ -58,6 +59,8 @@ const Home = () => {
 	const [recommends, setRecommends] = React.useState([]);
 	const [menuList, setMenuList] = React.useState([]);
 
+	const [showFilterModal, setShowFilterModal] = React.useState(false);
+
 	React.useEffect(() => {
 		handleChangeCategory(selectedCategoryId, selectedMenuType)
 	}, []);
@@ -98,7 +101,9 @@ const Home = () => {
 					marginVertical: SIZES.base,
 					paddingHorizontal: SIZES.radius,
 					borderRadius: SIZES.radius,
-					backgroundColor: COLORS.lightGray2
+					backgroundColor: COLORS.lightGray2,
+					marginBottom: -1,
+					marginTop: 20
 				}}
 			>
 				{/* Icon */}
@@ -124,7 +129,7 @@ const Home = () => {
 				/>
 				{/* Filter Button */}
 				<TouchableOpacity
-				//onPress
+					onPress={() => setShowFilterModal(true)}
 				>
 					<Image
 						source={icons.filter}
@@ -189,7 +194,7 @@ const Home = () => {
 					horizontal
 					showsHorizontalScrollIndicator={false}
 					renderItem={({ item, index }) => (
-						<HorizontalFoodCard
+						<HorizontalClothesCard
 							containerStyle={{
 								height: 180,
 								width: SIZES.width * 0.85,
@@ -204,7 +209,7 @@ const Home = () => {
 								width: 150
 							}}
 							item={item}
-							onPress={() => console.log("HorizontalFoodCard")}
+							onPress={() => console.log("HorizontalClothesCard")}
 						/>
 					)}
 				/>
@@ -224,13 +229,13 @@ const Home = () => {
 					horizontal
 					showsHorizontalScrollIndicator={false}
 					renderItem={({ item, index }) => (
-						<VerticalFoodCard
+						<VerticalClothesCard
 							containerStyle={{
 								marginLeft: index == 0 ? SIZES.padding : 18,
 								marginRight: index == popular.length - 1 ? SIZES.padding : 0
 							}}
 							item={item}
-							onPress={() => console.log("Vertical Food Card")}
+							onPress={() => console.log("Vertical Clothes Card")}
 						/>
 					)}
 				/>
@@ -238,7 +243,7 @@ const Home = () => {
 		)
 	}
 
-	function renderFoodCategories() {
+	function renderClothesCategories() {
 		return (
 			<FlatList
 				data={dummyData.categories}
@@ -336,6 +341,14 @@ const Home = () => {
 			{/* Search */}
 			{renderSearch()}
 
+			{/* Filter */}
+			{showFilterModal &&
+				<FilterModal
+					isVisible={showFilterModal}
+					onClose={() => setShowFilterModal(false)}
+				/>
+			}
+
 			{/* List */}
 			<FlatList
 				data={menuList}
@@ -345,8 +358,8 @@ const Home = () => {
 					<View>
 						{/* Picking up from */}
 						{renderPickUpFrom()}
-						{/* Food Categories */}
-						{renderFoodCategories()}
+						{/* Clothes Categories */}
+						{renderClothesCategories()}
 						{/* Popular */}
 						{renderPopularSection()}
 						{/* Recommended */}
@@ -357,7 +370,7 @@ const Home = () => {
 				}
 				renderItem={({ item, index }) => {
 					return (
-						<HorizontalFoodCard
+						<HorizontalClothesCard
 							containerStyle={{
 								height: 130,
 								alignItems: 'center',
@@ -370,7 +383,7 @@ const Home = () => {
 								width: 110
 							}}
 							item={item}
-							onPress={() => console.log("HorizontalFoodCard")}
+							onPress={() => console.log("HorizontalClothesCard")}
 						/>
 					)
 				}}

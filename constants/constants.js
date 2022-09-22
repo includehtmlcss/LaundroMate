@@ -34,15 +34,15 @@ const bottom_tabs = [
 const delivery_time = [
   {
     id: 1,
-    label: "10 Mins",
+    label: "12 Hours",
   },
   {
     id: 2,
-    label: "20 Mins",
+    label: "1 Day",
   },
   {
     id: 3,
-    label: "30 Mins",
+    label: "2 Days",
   },
 ];
 
