@@ -185,7 +185,7 @@ const Home = () => {
 	function renderRecommendedSection() {
 		return (
 			<Section
-				title="Recommended"
+				title="Laundry At The Best Rates"
 				onPress={() => console.log("Show all recommended")}
 			>
 				<FlatList
@@ -220,7 +220,7 @@ const Home = () => {
 	function renderPopularSection() {
 		return (
 			<Section
-				title="Popular Near You"
+				title="Popular Services"
 				onPress={() => console.log("Show all popular items")}
 			>
 				<FlatList

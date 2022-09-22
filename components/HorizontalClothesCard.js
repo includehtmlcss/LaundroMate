@@ -46,7 +46,7 @@ const HorizontalClothesCard = ({ containerStyle, imageStyle, item, onPress }) =>
 
             </View>
 
-            {/* Calories */}
+            {/* Times */}
             <View
                 style={{
                     flexDirection: 'row',
@@ -56,14 +56,14 @@ const HorizontalClothesCard = ({ containerStyle, imageStyle, item, onPress }) =>
                 }}
             >
                 <Image
-                    source={icons.calories}
+                    source={icons.Times}
                     style={{
                         width: 30,
                         height: 30
                     }}
                 />
                 <Text style={{ color: COLORS.darkGray2, ...FONTS.body5 }}>
-                    {item.calories} Calories
+                    {item.Times} Times
                 </Text>
             </View>
 

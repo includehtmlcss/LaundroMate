@@ -72,35 +72,35 @@ const ratings = [
 const tags = [
   {
     id: 1,
-    label: "Burger",
+    label: "Regulars",
   },
   {
     id: 2,
-    label: "Fast Food",
+    label: "Dry Clean",
   },
   {
     id: 3,
-    label: "Pizza",
+    label: "Wash",
   },
   {
     id: 4,
-    label: "Asian",
+    label: "Iron",
   },
   {
     id: 5,
-    label: "Dessert",
+    label: "Roll Press",
   },
   {
     id: 6,
-    label: "Breakfast",
+    label: "Steam Press",
   },
   {
     id: 7,
-    label: "Vegetable",
+    label: "Starch",
   },
   {
     id: 8,
-    label: "Taccos",
+    label: "Petrol Wash",
   },
 ];
 

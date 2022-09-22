@@ -19,19 +19,19 @@ const VerticalClothesCard = ({ containerStyle, item, onPress }) => {
                 ...containerStyle
             }}
         >
-            {/* Calories and Favorite */}
+            {/* Times and Favorite */}
             <View style={{ flexDirection: 'row' }}>
-                {/* calories */}
+                {/* Times */}
                 <View style={{ flex: 1, flexDirection: 'row' }}>
                     <Image
-                        source={icons.calories}
+                        source={icons.Times}
                         style={{
                             width: 30,
                             height: 30
                         }}
                     />
                     <Text style={{ color: COLORS.darkGray2, ...FONTS.body5 }}>
-                        {item.calories} Calories
+                        {item.Times} Times
                     </Text>
                 </View>
 

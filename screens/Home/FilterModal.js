@@ -127,7 +127,7 @@ const FilterModal = ({ isVisible, onClose }) => {
             >
                 <View
                     style={{
-                        alignItems: 'center'
+                        alignItems: 'center',
                     }}
                 >
                     <TwoPointSlider
@@ -155,7 +155,8 @@ const FilterModal = ({ isVisible, onClose }) => {
                 <View
                     style={{
                         flexDirection: 'row',
-                        justifyContent: 'space-between'
+                        justifyContent: 'space-between',
+                        marginTop: SIZES.radius
                     }}
                 >
                     {constants.ratings.map((item, index) => {
@@ -196,7 +197,8 @@ const FilterModal = ({ isVisible, onClose }) => {
                 <View
                     style={{
                         flexDirection: 'row',
-                        flexWrap: 'wrap'
+                        flexWrap: 'wrap',
+                        marginTop: SIZES.radius
                     }}
                 >
                     {constants.tags.map((item, index) => {
@@ -292,7 +294,7 @@ const FilterModal = ({ isVisible, onClose }) => {
                     <ScrollView
                         showsVerticalScrollIndicator={false}
                         contentContainerStyle={{
-                            paddingBottom: 250
+                            paddingBottom: 200
                         }}
                     >
                         {/* Distance */}

@@ -10,94 +10,133 @@ const categories = [
   {
     id: 1,
     name: "Daily Wear",
-    icon: icons.burger,
+    icon: icons.dailywear,
   },
   {
     id: 2,
     name: "Party Wear",
-    icon: icons.cherry,
+    icon: icons.partywear,
   },
   {
     id: 3,
     name: "Ornamental",
-    icon: icons.rice,
+    icon: icons.ornamental,
   },
 ];
 
-const hamburger = {
+const regularwash = {
   id: 1,
-  name: "Hamburger",
-  description: "Chicken patty hamburger",
+  name: "Regular Wash",
+  description: "Starting at",
   categories: [1, 2],
-  price: 15.99,
-  calories: 78,
+  price: "7/item",
+  Times: 78,
   isFavourite: true,
-  image: require("../assets/dummyData/hamburger.png"),
+  image: require("../assets/dummyData/regularwash.png"),
 };
 
-const hotTacos = {
+const premiumlaundry = {
   id: 2,
-  name: "Hot Tacos",
-  description: "Mexican tortilla & tacos",
+  name: "Premium Laundry",
+  description: "Starting at",
   categories: [1, 3],
-  price: 10.99,
-  calories: 78,
+  price: "100/kg",
+  Times: 60,
   isFavourite: false,
-  image: require("../assets/dummyData/hot_tacos.png"),
+  image: require("../assets/dummyData/premiumlaundry.png"),
 };
 
-const vegBiryani = {
+const regularsteamironing = {
   id: 3,
-  name: "Veg Biryani",
-  description: "Indian Vegetable Biryani",
+  name: "Regular Steam Ironing",
+  description: "Starting at",
   categories: [1, 2, 3],
-  price: 10.99,
-  calories: 78,
+  price: "12",
+  Times: 55,
   isFavourite: true,
-  image: require("../assets/dummyData/veg_biryani.png"),
+  image: require("../assets/dummyData/regularsteamironing.png"),
 };
 
-const wrapSandwich = {
+const heavysteampress = {
   id: 4,
-  name: "Wrap Sandwich",
-  description: "Grilled vegetables sandwich",
+  name: "Heavy Steam Press",
+  description: "Starting at",
   categories: [1, 2],
-  price: 10.99,
-  calories: 78,
+  price: "30",
+  Times: 153,
   isFavourite: true,
-  image: require("../assets/dummyData/wrap_sandwich.png"),
+  image: require("../assets/dummyData/heavysteampress.png"),
+};
+
+const dryClean = {
+  id: 5,
+  name: "Dry Cleaning",
+  description: "Starting at",
+  categories: [1, 2],
+  price: "99",
+  Times: 75,
+  isFavourite: true,
+  image: require("../assets/dummyData/dryclean.png"),
+};
+
+const curtainCleaning = {
+  id: 6,
+  name: "Curtain Cleaning",
+  description: "Starting at",
+  categories: [1, 2],
+  price: "249",
+  Times: 44,
+  isFavourite: true,
+  image: require("../assets/dummyData/curtaincleaning.png"),
+};
+
+const woolenCare = {
+  id: 7,
+  name: "Woolen Care",
+  description: "Starting at",
+  categories: [1, 2],
+  price: "249",
+  Times: 77,
+  isFavourite: true,
+  image: require("../assets/dummyData/woolencare.png"),
+};
+
+const linenWash = {
+  id: 8,
+  name: "Linen Wash",
+  description: "Starting at",
+  categories: [1, 2],
+  price: "399",
+  Times: 66,
+  isFavourite: true,
+  image: require("../assets/dummyData/linenwash.png"),
 };
 
 const menu = [
   {
     id: 1,
     name: "Featured",
-    list: [hamburger, hotTacos, vegBiryani],
+    list: [regularwash, premiumlaundry, regularsteamironing],
   },
   {
     id: 2,
-    name: "Nearby you",
-    list: [hamburger, vegBiryani, wrapSandwich],
+    name: "Popular",
+    list: [regularwash, premiumlaundry, heavysteampress],
   },
   {
     id: 3,
-    name: "Popular",
-    list: [hamburger, hotTacos, wrapSandwich],
+    name: "Newest",
+    list: [linenWash, woolenCare],
   },
   {
     id: 4,
-    name: "Newest",
-    list: [hamburger, hotTacos, vegBiryani],
+    name: "Trending",
+    list: [regularwash, regularsteamironing, heavysteampress],
   },
   {
     id: 5,
-    name: "Trending",
-    list: [hamburger, vegBiryani, wrapSandwich],
-  },
-  {
-    id: 6,
     name: "Recommended",
-    list: [hamburger, hotTacos, wrapSandwich],
+    list: [regularwash, premiumlaundry, heavysteampress],
   },
 ];
 

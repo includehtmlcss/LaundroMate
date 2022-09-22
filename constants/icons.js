@@ -6,11 +6,11 @@ const search = require("../assets/icons/search.png")
 const filter = require("../assets/icons/filter.png")
 const down_arrow = require("../assets/icons/down_arrow.png")
 const favourite = require("../assets/icons/favourite.png")
-const burger = require("../assets/icons/burger.png")
-const cherry = require("../assets/icons/cherry.png")
-const rice = require("../assets/icons/rice.png")
+const dailywear = require("../assets/icons/dailywear.png")
+const partywear = require("../assets/icons/partywear.png")
+const ornamental = require("../assets/icons/ornamental.png")
 const love = require("../assets/icons/love.png")
-const calories = require("../assets/icons/calories.png")
+const Times = require("../assets/icons/Times.png")
 const home = require("../assets/icons/home.png")
 const location = require("../assets/icons/location.png")
 const logout = require("../assets/icons/logout.png")
@@ -30,11 +30,11 @@ export default {
     filter,
     down_arrow,
     favourite,
-    burger,
-    cherry,
-    rice,
+    dailywear,
+    partywear,
+    ornamental,
     love,
-    calories,
+    Times,
     home,
     location,
     logout,
