@@ -72,7 +72,7 @@ const dryClean = {
   id: 5,
   name: "Dry Cleaning",
   description: "Starting at",
-  categories: [1, 2],
+  categories: [2, 3],
   price: "99",
   Times: 75,
   isFavourite: true,
@@ -83,7 +83,7 @@ const curtainCleaning = {
   id: 6,
   name: "Curtain Cleaning",
   description: "Starting at",
-  categories: [1, 2],
+  categories: [1, 2, 3],
   price: "249",
   Times: 44,
   isFavourite: true,
@@ -105,7 +105,7 @@ const linenWash = {
   id: 8,
   name: "Linen Wash",
   description: "Starting at",
-  categories: [1, 2],
+  categories: [2, 3],
   price: "399",
   Times: 66,
   isFavourite: true,
@@ -121,12 +121,12 @@ const menu = [
   {
     id: 2,
     name: "Popular",
-    list: [regularwash, premiumlaundry, heavysteampress],
+    list: [regularwash, dryClean, heavysteampress],
   },
   {
     id: 3,
     name: "Newest",
-    list: [linenWash, woolenCare],
+    list: [linenWash, woolenCare, curtainCleaning],
   },
   {
     id: 4,
@@ -136,7 +136,7 @@ const menu = [
   {
     id: 5,
     name: "Recommended",
-    list: [regularwash, premiumlaundry, heavysteampress],
+    list: [regularwash, woolenCare, heavysteampress],
   },
 ];
 
